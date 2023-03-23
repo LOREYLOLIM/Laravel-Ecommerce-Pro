@@ -1,16 +1,23 @@
-<x-app-layout>
-
-</x-app-layout>
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Admin</h1>
-</body>
+  <head>
+@include('admin.css')
+  </head>
+  <body>
+    <div class="container-scroller">
+
+      <!-- partial:partials/_sidebar.html -->
+        @include('admin.sidebar')
+      <!-- partial -->
+      @include('admin.header')
+
+        <!-- partial -->
+        @include('admin.body')
+
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+  @include('admin.script')
+  </body>
 </html>
