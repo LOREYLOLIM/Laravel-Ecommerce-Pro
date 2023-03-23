@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
 @include('admin.css')
+
+<style type="text/css">
+    .div_center{
+        text-align: center;
+        padding-top: 40px;
+    }
+    .h2_font{
+        font-size: 40px;
+        padding-bottom: 40px;
+    }
+
+</style>
+
+
   </head>
   <body>
     <div class="container-scroller">
@@ -12,7 +27,9 @@
       @include('admin.header')
 
         <!-- partial -->
-        @include('admin.body')
+        <div class="main-panel">
+            @yield('content')
+        </div>
 
         <!-- main-panel ends -->
       </div>

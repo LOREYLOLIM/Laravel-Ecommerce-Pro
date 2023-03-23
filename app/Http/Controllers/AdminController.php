@@ -9,9 +9,9 @@ class AdminController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function view_category()
     {
-        //
+        return view('admin.category');
     }
 
     /**
