@@ -17,7 +17,29 @@
     .input_color{
         color: black;
     }
-
+    .colors{
+        color: white
+    }
+    .center{
+        margin:auto;
+        width: 50%;
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        border:3px solid white;
+    }
+    label{
+        display: inline-block;
+        width: 200px;
+    }
+    .div_design{
+        padding-bottom: 15px;
+    }
+    .img_size
+    {
+        width: 200px;
+        height: 200px;
+    }
 </style>
 
 
@@ -32,7 +54,9 @@
 
         <!-- partial -->
         <div class="main-panel">
+            <div class="content-wrapper">
             @yield('content')
+            </div>
         </div>
 
         <!-- main-panel ends -->
