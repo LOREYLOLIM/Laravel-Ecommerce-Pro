@@ -12,6 +12,10 @@
     .h2_font{
         font-size: 40px;
         padding-bottom: 40px;
+        color: white;
+    }
+    .input_color{
+        color: black;
     }
 
 </style>
