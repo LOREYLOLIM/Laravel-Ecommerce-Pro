@@ -109,15 +109,15 @@ class AdminController extends Controller
         $imagename=time().'.'.$image->getClientOriginalExtension();
         $request->image->move('product', $imagename);
         $product->image=$imagename;
-  
+
         }
-        
+
 
         $product->save();
 
         return redirect()->back()->with('message', 'Product Updated Successfully');
     }
-   
+
 
     /**
      * Show the form for creating a new resource.
