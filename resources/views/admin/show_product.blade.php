@@ -20,7 +20,7 @@
   <div class="div_center">
     <h1 class=" h2_font">All Products</h1>
 
-    <div class="colors center">
+    <div>
         <table class="table table-dark">
             <thead>
               <tr>
@@ -31,7 +31,9 @@
                 <th scope="col">Price</th>
                 <th scope="col">Discount Price</th>
                 <th scope="col">Image</th>
-                <th scope="col">Action</th>
+                <th scope="col">Delete</th>
+                <th scope="col">Edit</th>
+
 
               </tr>
             </thead>
@@ -47,8 +49,10 @@
                     <td>
                         <img class="img_size" src="/product/{{ $product->image }}">
                     </td>
-                <td><a onclick="return confirm('Are you sure you want to Delete This?')" class="btn btn-danger" href="">Delete</a></td>
-              </tr>
+                <td><a onclick="return confirm('Are you sure you want to Delete This?')" class="btn btn-danger" href="{{ url('delete_product', $product->id) }}">Delete</a></td>
+                <td><a class="btn btn-success" href="{{ url('update_product', $product->id) }}">Edit</a></td>
+
+            </tr>
               @endforeach
 
             </tbody>
